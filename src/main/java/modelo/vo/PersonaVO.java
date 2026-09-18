@@ -3,14 +3,16 @@ package modelo.vo;
 public class PersonaVO {
     private int cod;
     private String nombre;
+    private Double sueldo;
 
     public PersonaVO() {
 
     }
 
-    public PersonaVO(int cod, String nombre) {
+    public PersonaVO(int cod, String nombre, Double sueldo) {
         this.cod = cod;
         this.nombre = nombre;
+        this.sueldo = sueldo;
     }
 
     public int getCodigo() {
@@ -29,9 +31,13 @@ public class PersonaVO {
         this.nombre = nombre;
     }
 
+    public Double getsueldo() {return sueldo;}
+
+    public void setsueldo(Double sueldo) {this.sueldo = sueldo;}
+
     @Override
     public String toString() {
-        return "PersonaVO{" + "cod=" + cod + ", nombre=" + nombre + '}';
+        return "PersonaVO{" + "cod=" + cod + ", nombre=" + nombre + ", sueldo= " + sueldo + '}';
     }
 
 }

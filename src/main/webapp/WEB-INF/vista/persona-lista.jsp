@@ -17,7 +17,9 @@
             <tr>
               <th>Código</th>
               <th>Nombre</th>
+              <th>Salario</th>
               <th>Acciones</th>
+              
             </tr>
           </thead>
           <tbody>
@@ -26,6 +28,7 @@
                 <tr>
                   <td>${p.codigo}</td>
                   <td>${p.nombre}</td>
+                  <td>${p.sueldo}</td>
                   <td class="actions">
                     <!-- Botón Editar deshabilitado -->
                     <button
